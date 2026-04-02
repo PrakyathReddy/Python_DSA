@@ -1,7 +1,3 @@
-# 1. Reads the file
-# 2. Counts how many times each HTTP status code appears
-# 3. Prints a summary line
-
 with open('resources/access.log', 'r') as file:
     code_list = []
     for code in file:

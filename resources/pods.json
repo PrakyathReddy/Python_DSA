@@ -1,0 +1,7 @@
+[
+    {"name": "nginx-7d4b", "status": "Running", "restarts": 0},
+    {"name": "redis-a3f1", "status": "CrashLoopBackOff", "restarts": 15},
+    {"name": "postgres-9c2e", "status": "Running", "restarts": 0},
+    {"name": "app-b8d5", "status": "Error", "restarts": 8},
+    {"name": "worker-c1e9", "status": "Running", "restarts": 2}
+]
