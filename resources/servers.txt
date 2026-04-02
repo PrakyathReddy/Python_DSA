@@ -1,0 +1,5 @@
+web-01,healthy
+web-02,unhealthy
+db-01,healthy
+db-02,unhealthy
+cache-01,healthy
