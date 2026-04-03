@@ -10,12 +10,16 @@
 # print(TwoSum(nums))
 
 def TwoSum(numbers, target):
-    list = []
-    for i in numbers:
-        if i<target and (target - i) in numbers:
-            list.append(numbers.index(i))
-    return list
+    seen = {} # map number to it's index using enumerate
+    for index, value in enumerate(numbers):
+        complement = target - value
+        # print(f"index: {index}, value: {value}, complement: {complement}")
+        # print(f"check seen: {seen}")
+        # print(f"check seen before: {complement in seen.values()}")
+        if complement in seen:
+            return [seen[complement],index]    
+        seen[value] = index    
 
 nums = [2, 7, 11, 15]
 target = 9
-print(TwoSum(nums, target))
+print(TwoSum(nums,target))
